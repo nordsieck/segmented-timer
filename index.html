@@ -1,5 +1,35 @@
 <html>
+  <head>
+    <script src = "lib.js"></script>
+    <link href = "main.css" rel = "stylesheet">
+  </head>
   <body>
-    Test
+    <div>
+      <span id="current">3:50</span> <span id="total">28:53</span>
+    </div>
+    
+    <div>
+      <progress value = "300.7" max = "300.7"></progress>
+      <progress value = "300.7" max = "300.7"></progress>
+      <progress value = "230" max = "300.7"></progress>
+      <br />
+      <progress value = "300.7" max = "300.7"></progress>
+      <progress value = "300.7" max = "300.7"></progress>
+      <progress value = "300.7" max = "300.7"></progress>
+    </div>
+    
+    <div>
+      <button name = "start" type = "submit" value = "start">Start</button>
+      <button name = "pause" type = "submit" value = "pause">Pause</button>
+    </div>
+    
+    <div>
+      <label for = "total">Total Time: </label>
+      <input type = "text" id = "total" name = "total">
+      <label for = "segments">Segments: </label>
+      <input type = "text" id = "segments" name = "segments">
+      <label for = "penalty">Penalty: </label>
+      <input type = "text" id = "penalty" name = "penalty">
+    </div><br />
   </body>
 </html>
