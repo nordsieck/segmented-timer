@@ -55,9 +55,9 @@ function Timer(duration, segments) {
 	result += `<button id = "advance" type = "submit" value = "advance">Advance</button></div>`;
 
 	result += `<div>`;
-	result += `<label for = "total">Total Time: </label> <input type = "text" id = "total" name = "total">`;
-	result += `<label for = "segments">Segments: </label> <input type = "text" id = "segments" name = "segments">`;
-	result += `<label for = "penalty">Penalty: </label>\n<input type = "text" id = "penalty" name = "penalty">`;
+	result += `<label for = "total">Total Time: </label> <input type = "text" id = "total" name = "total" value = "0">`;
+	result += `<label for = "segments">Segments: </label> <input type = "text" id = "segments" name = "segments" value = "0">`;
+	result += `<label for = "penalty">Penalty: </label>\n<input type = "text" id = "penalty" name = "penalty" value = "3">`;
 	result += `</div>`;
 
 	return result;
