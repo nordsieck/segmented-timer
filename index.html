@@ -2,31 +2,16 @@
   <head>
     <script src = "lib.js"></script>
     <link href = "main.css" rel = "stylesheet">
+    <script>
+      let T = new Timer(0, 0);
+
+      window.onload = function() {
+	  let timer = document.getElementById("timer");
+	  timer.innerHTML = T.render();
+      };
+    </script>
   </head>
   <body>
-    <div id = "times">
-      <span id = "current">3:50</span> <span id = "total">28:53</span>
-    </div>
-    <div id = "progress">
-      <progress value = "300.7" max = "300.7"></progress>
-      <progress value = "300.7" max = "300.7"></progress>
-      <progress value = "300.7" max = "300.7"></progress>
-      <progress value = "300.7" max = "300.7"></progress>
-      <progress value = "300.7" max = "300.7"></progress>
-      <progress value = "230" max = "300.7"></progress>
-    </div>
-    <div>
-      <button id = "start" type = "submit" value = "start">Start</button>
-      <button id = "pause" type = "submit" value = "pause">Pause</button>
-      <button id = "advance" type = "submit" value = "advance">Advance</button>
-    </div>
-    <div>
-      <label for = "total">Total Time: </label>
-      <input type = "text" id = "total" name = "total">
-      <label for = "segments">Segments: </label>
-      <input type = "text" id = "segments" name = "segments">
-      <label for = "penalty">Penalty: </label>
-      <input type = "text" id = "penalty" name = "penalty">
-    </div><br />
+    <div id = "timer"></div>
   </body>
 </html>
