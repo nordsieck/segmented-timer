@@ -1,8 +1,6 @@
 'use strict';
 
-module.exports = {
-    Timer: Timer,
-}
+if (typeof(module) != "undefined") { module.exports = { Timer: Timer }; }
 
 // todo: figure out how the timer ending works
 function Timer(duration, segments) {
